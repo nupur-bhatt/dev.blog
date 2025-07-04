@@ -19,7 +19,7 @@ A simple and responsive web application that allows users to Create, Read, Updat
 - **Backend:** Node.js, Express
 - **Templating:** EJS
 - **Storage:** In-memory JavaScript array (no database)
-- **Styling:** *(Add your CSS framework if used, or mention plain CSS)*
+- **Styling:** *CSS*
 
 ---
 
