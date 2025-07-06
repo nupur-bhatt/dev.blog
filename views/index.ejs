@@ -1,7 +1,18 @@
 
 <body>
     <%- include("../views/partials/header.ejs") %>
-   <h1> <%= title %> </h1> 
+   <h1> <%= locals.title %> </h1>
+   <br>
+
+   <% locals.arraysBlog.forEach(blog => { %>
+
+    <h5><%= blog.blogTitle %></h5> 
+    <h5><%= blog.content%></h5> 
+    <h5>Written By: <%= blog.author %></h5>
+
+   <% }); %>
+
+   
     <%- include("../views/partials/footer.ejs") %>
 </body>
 </html>
