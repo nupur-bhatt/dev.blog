@@ -1,0 +1,23 @@
+h1 {
+    color: #ECDFCC;
+    font-size: 3.5rem;
+    text-align: center;
+}
+body{
+    background-image: url("/images/floral1opaque.png") !important;
+    background-color: #8a8d63;
+    background-size: contain;                
+    background-position: bottom;             
+    background-repeat: repeat-x;          
+    margin: 0;
+    height: 100vh;
+}
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px 20px;
+    color: #ECDFCC;
+}
