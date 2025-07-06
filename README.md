@@ -28,7 +28,7 @@ A simple and responsive web application that allows users to Create, Read, Updat
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/dev.blog.git
+   git clone https://github.com/nupur-bhatt/dev.blog.git
    cd dev.blog
 
 2. **Install dependencies**
