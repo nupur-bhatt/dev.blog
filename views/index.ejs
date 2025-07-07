@@ -4,11 +4,11 @@
    <h1> <%= locals.title %> </h1>
    <br>
 
-   <% locals.arraysBlog.forEach(blog => { %>
-
-    <h5><%= blog.blogTitle %></h5> 
-    <h5><%= blog.content%></h5> 
-    <h5>Written By: <%= blog.author %></h5>
+   <% locals.posts.forEach(post => { %>
+    <small><%= post.id %></small>
+    <h5><%= post.title %></h5> 
+    <h5><%= post.content%></h5> 
+    <h5>Written By: <%= post.author %></h5>
 
    <% }); %>
 

@@ -1,7 +1,7 @@
+
 h1 {
     color: #ECDFCC;
     font-size: 3.5rem;
-    text-align: center;
 }
 
 body{
@@ -12,14 +12,17 @@ body{
     background-repeat: repeat-x;          
     margin: 0;
     height: 100vh;
+    text-align: center;
 }
 
 h5{
     color: #ECDFCC;
     font-size: 1.4rem;
-    text-align: center;
 }
-
+small{
+    color: #ECDFCC;
+    text-align: center !important;
+}
 footer{
     position: absolute;
     bottom: 0;
