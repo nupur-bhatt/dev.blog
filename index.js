@@ -46,7 +46,13 @@ app.put("/post/:id", (req,res)=>{
     res.redirect("/");
 });
 
+app.delete("/post/:id", (req,res)=>{
+    const id = req.params.id;
 
+    postsArray = postsArray.filter(post => post.id !== id);
+    res.redirect("/");
+
+});
 
 app.listen(port, ()=>{
     console.log(`server running on port ${port}`);
