@@ -1,32 +1,178 @@
 
-h1 {
-    color: #ECDFCC;
-    font-size: 3.5rem;
+main {
+  flex: 1 0 auto;
+}
+
+header {
+  width: 100%;
+  color: #ECDFCC;   
+  background-color: #9f7e69;          
+  text-align: center;
+  padding: 0.8rem;
+  margin-bottom: 2rem;
 }
 
 body{
+    width: 100%;
     background-image: url("/images/floral1opaque.png") !important;
     background-color: #8a8d63;
     background-size: contain;                
     background-position: bottom;             
     background-repeat: repeat-x;          
     margin: 0;
-    height: 100vh;
     text-align: center;
+    justify-content: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.card {
+  background-color: rgba(236, 223, 204, 0.80); 
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  color: #3e3b2e; 
+}
+
+.card-body{
+    max-height: 400px;    
+    overflow-y: auto; 
+}
+
+.card-title{
+    font-family: "Amatic SC";
+    letter-spacing: 3px;
+    font-size: xx-large;
+}
+
+.card-text{
+    font-family: "Quicksand";
+    font-size: small;
+    text-align: left;
+}
+
+.form-card{
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    color: #ECDFCC; 
+    margin:0
+}
+
+.form-card input,
+.form-card textarea {
+  background-color: #6f6a55; 
+  color: #ECDFCC;            
+  border: none;
+}
+
+.form-card input::placeholder,
+.form-card textarea::placeholder {
+  color: #cfc6b2; 
+  font-size: medium;
+}
+
+.form-card input:focus,
+.form-card textarea:focus {
+  outline: none;
+  background-color: #cfc6b2;
+  color: #3e3b2e;
+  box-shadow: 0 0 0 2px rgba(236, 223, 204, 0.3);
+}
+
+.form-card input:hover,
+.form-card textarea:hover {
+  background-color: #655f4d; 
+}
+
+.author-text{
+    font-family: "Cedarville Cursive";
+    font-size: large;
+}
+
+.edit-btn {
+  background-color: #6f6a55;      
+  color: #ECDFCC;                  
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.3rem 0.6rem;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #5f5b49;       
+  color: #f3ede2;
+}
+
+.delete-btn {
+  background-color: #8a8d63;       
+  color: #ECDFCC;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.3rem 0.6rem;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #736f50;       
+  color: #f3ede2;
+}
+
+.edit-btn i,
+.delete-btn i {
+  font-size: 1.1rem;
+  vertical-align: middle;
+}
+
+h1 {
+    color: #ECDFCC;
+    font-family: 'Amatic SC', serif;
+    letter-spacing: 10px;
 }
 
 h5{
     color: #ECDFCC;
-    font-size: 1.4rem;
+    font-size: 1rem;
+    letter-spacing: 4px;
+    font-family: 'Quicksand';
+    line-height: 1.6;
+    text-transform: capitalize;
+    font-weight: 100;
 }
 small{
+    font-family: "Cedarville Cursive";
+    font-size: 1.3rem;
     color: #ECDFCC;
-    text-align: center !important;
 }
+
+.submit-btn{
+    background-color: #ECDFCC;
+    color: #3e3b2e;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-btn:focus{
+    outline: none;
+    background-color: #595544;
+    box-shadow: 0 0 0 3px rgba(236, 223, 204, 0.4);
+}
+
+.submit-btn:hover {
+  background-color: #595544; 
+  cursor: pointer;
+}
+
 footer{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 10px 20px;
-    color: #ECDFCC;
+    width: 100%;
+    padding: 1rem 2rem;      
+    box-sizing: border-box;  
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-end;
+    overflow-x: hidden;
+    
 }
