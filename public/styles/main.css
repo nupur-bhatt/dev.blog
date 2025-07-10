@@ -38,15 +38,19 @@ body{
   color: #3e3b2e; 
 }
 
-.card-body{
-    max-height: 400px;    
-    overflow-y: auto; 
+.card-body {
+  position: relative; 
+  padding-top: 2.5rem; 
+  padding-inline-end: 2.5rem; 
+  max-height: 400px;    
+  overflow-y: auto; 
 }
 
 .card-title{
     font-family: "Amatic SC";
     letter-spacing: 3px;
     font-size: xx-large;
+    margin-top: 0;
 }
 
 .card-text{
@@ -87,6 +91,24 @@ body{
 .form-card input:hover,
 .form-card textarea:hover {
   background-color: #655f4d; 
+  color: #ECDFCC;
+}
+
+.edit-form input.form-control,
+.edit-form textarea.form-control {
+  background-color: rgba(111, 106, 85, 0.7); 
+  color: #ECDFCC; 
+  border: 1px solid #6f6a55;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.edit-form input.form-control:focus,
+.edit-form textarea.form-control:focus {
+  background-color: rgba(111, 106, 85, 0.9); 
+  color: #ECDFCC;
+  border-color: #8a8d63; 
+  outline: none;
+  box-shadow: none;
 }
 
 .author-text{
@@ -158,13 +180,35 @@ small{
 .submit-btn:focus{
     outline: none;
     background-color: #595544;
+    color: #ECDFCC;
     box-shadow: 0 0 0 3px rgba(236, 223, 204, 0.4);
 }
 
 .submit-btn:hover {
   background-color: #595544; 
+  color: #ECDFCC;
   cursor: pointer;
 }
+
+.cancel-btn{
+    background-color: #ECDFCC;
+    color: #3e3b2e;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cancel-btn:focus{
+    outline: none;
+    background-color: #595544;
+    color: #ECDFCC;
+    box-shadow: 0 0 0 3px rgba(236, 223, 204, 0.4);
+}
+
+.cancel-btn:hover {
+  background-color: #595544; 
+  color: #ECDFCC;
+  cursor: pointer;
+}
+
 
 footer{
     width: 100%;
@@ -175,4 +219,11 @@ footer{
     justify-content: flex-end;
     overflow-x: hidden;
     
+}
+
+.post-actions {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 10; /* Make sure it stays on top */
 }

@@ -10,13 +10,16 @@ var mainTitle = "dev.blog";
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
+app.use(methodOverride('_method'));
 
 app.get("/", (req,res)=>{
+    const editingId = req.query.edit;
     var year = new Date().getFullYear();
     res.render("index.ejs", res.locals = {
         title : mainTitle,
         currentYear: year,
-        posts : postsArray 
+        posts : postsArray,
+        editingId: editingId 
     });
 }); 
 
@@ -48,7 +51,6 @@ app.put("/post/:id", (req,res)=>{
 
 app.delete("/post/:id", (req,res)=>{
     const id = req.params.id;
-
     postsArray = postsArray.filter(post => post.id !== id);
     res.redirect("/");
 
