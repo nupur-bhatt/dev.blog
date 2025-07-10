@@ -5,12 +5,13 @@ A simple and responsive web application that allows users to Create, Read, Updat
 
 ## 🚀 Features
 
-- 📝 Create new blog posts with title and content
-- 📄 View a list of all posts or read individual post pages
-- ✏️ Edit existing blog posts
-- ❌ Delete blog posts
+- 📝 Create new blog posts with title, content, and author
+- 📄 View all posts displayed on the main page with responsive cards
+- ✏️ Inline edit existing blog posts directly on the main page
+- ❌ Delete blog posts with confirmation prompt
 - 🌐 Server-side rendering using EJS templates
-- 🧩 RESTful routing with Express
+- 🧩 RESTful routing with Express and method-override for PUT & DELETE
+- 🛠️ Responsive layout with Bootstrap 5 and custom CSS
 
 ---
 
@@ -19,9 +20,8 @@ A simple and responsive web application that allows users to Create, Read, Updat
 - **Backend:** Node.js, Express
 - **Templating:** EJS
 - **Storage:** In-memory JavaScript array (no database)
-- **Styling:** *CSS*
-
----
+- **Styling:** *Bootstrap 5*, custom *CSS* (including form and card styling)
+- **Utilities:** *uuid* for unique IDs, *method-override* to support PUT & DELETE methods
 
 ## 📦 Installation
 
