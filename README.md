@@ -46,4 +46,4 @@ A simple and responsive web application that allows users to Create, Read, Updat
    Open your browser and go to `http://localhost:3000`
 
   
-# Deployed on Render : https://dev-blog-pzjw.onrender.com/ 
+# Deployed on Render : https://dev-blog-co98.onrender.com/
